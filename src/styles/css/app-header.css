@@ -11,10 +11,82 @@ header {
 
 .search-bar {
   padding: 0.5em;
+  border-top-left-radius: 20px;
+  border-bottom-left-radius: 20px;
+  text-indent: 1em;
+}
+
+.search-button {
+  padding-top: 0.5em;
+  padding-bottom: 0.5em;
+  padding-right: 1em;
+  padding-left: 1em;
+  border-top-right-radius: 20px;
+  border-bottom-right-radius: 20px;
+}
+
+.pill-button {
+  padding-top: 0.5em;
+  padding-bottom: 0.5em;
+  padding-right: 1em;
+  padding-left: 1em;
+  border-radius: 20px;
+}
+
+.pill-button-count {
+  padding-top: 0.1em;
+  padding-bottom: 0.1em;
+  padding-right: 0.7em;
+  padding-left: 0.7em;
+  border-radius: 20px;
+}
+
+.categories-button{
+  padding-top: 0.5em;
+  padding-bottom: 0.5em;
+  padding-right: 1em;
+  padding-left: 1em;
+  border-radius: 20px;
 }
 
 @media (max-width: 600px) {
   header {
     flex-direction: column;
   }
+}
+
+/* self-implemented */
+.title-and-search-bar {
+  display: flex;
+}
+
+/* self-implemented */
+.search-bar-and-button {
+  display: flex;
+}
+
+/* self-implemented */
+.header-dropdown-and-cart {
+  display: flex
+}
+
+/* self-implemented */
+.header-space {
+  justify-content: space-between;
+}
+
+.header-div {
+  display: flex;
+  align-items: center;
+  gap: 1em;
+}
+
+.relative {
+  position: relative;
+}
+
+.absolute {
+  position: absolute;
+  top: 15px;
+  right: 55px;
 }

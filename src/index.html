@@ -1,16 +1,12 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <title>My Bookstore</title>
+        <title>Books.JBP</title>
         <meta charset="utf-8" />
         <meta name="description" content="The homepage for My Bookstore"/>
 
         <!-- import font-awesome icon -->
-        <!-- <link
-        href="//netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css"
-        rel="stylesheet"
-        />
-        <link rel="stylesheet" href="https://kit.fontawesome.com/3ed24d4b6c.css" crossorigin="anonymous">
+        <link href="http://maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
 
         <!-- global.css contains resets, custom properties, and utility classes -->
         <link rel="stylesheet" href="styles/css/global.css" />
@@ -24,39 +20,59 @@
 
     <body>
         <main>
-            <header class="container">                                                      <!-- global.css -->
-                <section class="bookstore-logo">                                            <!--TODO: Where is this?-->
-                    <a href="index.html">                           
-                        <img
-                            src="styles/images/site/bookstore-logo.png"
-                            alt="Another Bookstore Logo"
-                            width="150px"
-                            height="auto"
-                        />
-                    </a>
-                </section>
+            <header class="container header-space">                                                      <!-- global.css -->
+                <div class="header-div">
+                    <section class="bookstore-logo">                                            <!--TODO: Where is this?-->
+                        <a href="index.html">                           
+                            <img
+                                src="styles/images/site/bookstore-logo.png"
+                                alt="Another Bookstore Logo"
+                                width="50px"
+                                height="auto"
+                            />
+                        </a>
+                    </section>
 
-                <section class="title-and-search-bar">                                      <!-- TODO: Where is this? -->
-                    <h1 class="text-logo">Another Bookstore</h1>                            <!-- app-header.css -->
-                    <form action="category.html">
-                      <input type="text" class="search-bar" /><br />                        <!-- app-header.css -->
-                      <input type="submit" class="button search-button" value="Search" />   <!-- TODO: Where is class search-button? -->
-                    </form>
-                  </section>
+                    <section class="title-and-search-bar">                                          <!-- TODO: Where is this? app-header.css -->
+                        <h1 class="text-logo">Books.JBP</h1>                                        <!-- app-header.css -->
+                    </section>
 
-                  <section class="header-dropdown-and-cart">                                <!-- TODO: Where is this? -->
-                    <button class="button">cart (0)</button>
-                    <button class="button">login</button>
-                    <div class="header-dropdown">                                           <!-- header-dropdown.css -->
-                      <button class="button categories-button">Categories</button>          <!-- TODO: Where is categories-button -->
-                      <ul>
-                        <li><a href="category.html?category=Classics">Classics</a></li>
-                        <li><a href="category.html?category=Fantasy">Fantasy</a></li>
-                        <li><a href="category.html?category=Mystery">Mystery</a></li>
-                        <li><a href="category.html?category=Romance">Romance</a></li>
-                      </ul>
+
+                    <section class="title-and-search-bar">                                          <!-- TODO: Where is this? app-header.css -->
+                        <form action="category.html" class="search-bar-and-button">
+                            <input type="text" class="search-bar center-text" placeholder="Search"/>                                <!-- app-header.css -->
+                            <button type="submit" class="button search-button">
+                                <i class="fa fa-search"></i>                                         <!-- TODO: Where is class search-button? app-header.css-->
+                            </button>
+                        </form>
+                    </section>
+
+                </div>
+
+                <section class="header-dropdown-and-cart header-div">                               <!-- TODO: Where is this? app-header.css -->
+                    <div class="header-dropdown">                                                   <!-- header-dropdown.css -->
+                        <button class="button categories-button">
+                            Categories&nbsp
+                            <i class="fa fa-caret-down"></i>
+                        </button>                <!-- TODO: Where is categories-button? app-header.css -->
+                        <ul>
+                            <li><a href="category.html?category=Classics">Jordan Peterson's Book</a></li>
+                            <li><a href="category.html?category=Fantasy">Philosophy</a></li>
+                            <li><a href="category.html?category=Mystery">Psychology</a></li>
+                            <li><a href="category.html?category=Romance">Neuroscience</a></li>
+                            <li><a href="category.html?category=Romance">Religion</a></li>
+                            <li><a href="category.html?category=Romance">History</a></li>
+                            <li><a href="category.html?category=Romance">21st Century</a></li>
+                        </ul>
                     </div>
-                  </section>
+                    <button class="button pill-button">Login</button>
+
+                    <button class="button pill-button relative">
+                        <i class="fa fa-shopping-cart"></i>
+                        <button class="button pill-button-count absolute">0</button>
+                    </button>
+
+                </section>
             </header>
 
             <div class="home-page">                                                         <!-- home.css -->
@@ -77,6 +93,7 @@
                   </p>
                   <p>Take some time and explore the code.</p>
                 </section>
+                
                 <section class="category-images container">                                 <!-- TODO: where is category-images; global.css -->
                   <div class="category-image-items">                                        <!-- home.css -->
                     <a>
