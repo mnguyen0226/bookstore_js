@@ -2,16 +2,15 @@ footer {
     background: var(--secondary-background-color);
     display: flex;
     gap: 1em;
-  }
-  
-  .links,
-  .social-media-icons {
+}
+
+.links,
+.social-media-icons {
     display: flex;
     flex-direction: column;
-  }
-  
-  .social-media-icons {
+}
+
+.social-media-icons {
     text-align: center;
     gap: 0.25em;
-  }
-  
+}
