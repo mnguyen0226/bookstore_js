@@ -1,0 +1,119 @@
+/* GOOGLE FONTS */
+
+@import url("https://fonts.googleapis.com/css?family=Proza+Libre");
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,700;1,400;1,700&display=swap");
+
+/* CUSTOM PROPERTIES */
+
+/*
+    The :root selector matches the document's root element.
+    In HTML, the root element is always html. By convention, 
+    custom propertes are always defined n :root (not in html)
+*/
+:root {
+    --title-font-family: "Proza Libe", serif;
+    --default-font-family: "Roboto", sans-serif;
+
+    /*
+        16px is the default font size set by the browsers in the html tag.
+        This should never be changed so that the vision-impared users can override it.
+        Therefore, 1rem (root em) is the width of the em-dash at 16px.
+        If you want a different default size for
+    */
+    --default-font-size: 1.25rem;
+    --default-text-color: #111;
+    --neutral-color: #4e4e4e;
+
+    --primary-color: dodgerblue;
+    --primary-color-dark: darkblue;
+    --primary-background-color: whitesmoke;
+    --secondary-background-color: burlywood;
+    --card-background-color: navajowhite;
+}
+
+/* UTITLITY CLASSES */
+
+/*
+    When you get rid of margins, everything is crammed together. For instance,
+    paragraphs will have no space between them, which is NOT a good design.
+    The following utility class gives a top margin of 1.25rem (20px)
+    to all childfren inside a parent with class .flow-content,
+    EXCEPT for the first child, which will NOT get a margin.
+    That's because "elem + elem" means that the rule should be applied
+    to the first elem only when it is followed by another elem.
+*/
+.flow-content > * + * {
+    margin-top: 1rem;
+}
+
+/*
+    Giving various sections of your page this utility class will
+    ensure a nice padding around the contents.
+*/
+.container {
+    padding: 1rem;
+}
+
+/*
+    Sometime it's nice to have a section where the foregound 
+    and background colors are (more-or-less) flipped for contrast.
+    This utility class does that
+*/
+.dark-background {
+    background-color: var(--neutral-color);
+    color: whitesmoke;
+}
+
+/* LAYOUT */
+
+/* These global font properties will be inherited by child elements. */
+body {
+    background: var(--primary-background-color);
+    color: var(--default-text-color);
+    font-family: var(--default-font-family);
+    font-size: var(--default-font-size);
+    margin: 0 auto;
+    max-width: 70rem;
+}
+
+/* BUTTONS */
+
+/*
+    These rules give simplistic styles for button inside and outside of forms.
+    A richer website will likely have multiple styles that are defined by
+    multiple classes. At a minimum, you might have a class .primary-button and 
+    .secondary-button.
+*/
+.button,
+.button:visited {
+    display: inline-block;
+    background: var(--primary-color);
+    color: white;
+    text-decoration: none;
+    padding: 0.5em 1em;
+    cursor: pointer;
+}
+
+.button:hover,
+.button:active {
+    background: var(--primary-color-dark);
+    color: white;
+}
+
+/* LINKS */
+/* 
+    Some developers choose to make links look like buttons. Technically,
+    links are things you click that take you to another page, and buttons
+    are things you click on that perform some action (like adding a prodct to
+    a shopping cart), but the line has become somewhat blurred.
+*/
+
+a,
+a:visited {
+    color: var(--primary-color);
+}
+
+a:hover,
+a:active {
+    color: var(--primary-color-dark);
+}
