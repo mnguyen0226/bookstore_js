@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>My Bookstore</title>
+    <meta charset="utf-8" />
+    <meta name="description" content="The homepage for My Bookstore" />
+
+    <!-- Import font-awesome icons -->
+    <!-- <link
+      href="//netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css"
+      rel="stylesheet"
+    /> -->
+    <link rel="stylesheet" href="https://kit.fontawesome.com/3ed24d4b6c.css" crossorigin="anonymous">
+
+
+    <!-- order of CSS files is important (this is the "Cascade" part of CSS) -->
+
+    <!-- global.css contains resets, custom properties, and utility classes -->
+    <link rel="stylesheet" href="styles/css/global.css" />
+
+    <!-- start from the top-level component and work your way down -->
+    <link rel="stylesheet" href="styles/css/app.css" />
+    <link rel="stylesheet" href="styles/css/app-header.css" />
+    <link rel="stylesheet" href="styles/css/header-dropdown.css" />
+    <link rel="stylesheet" href="styles/css/app-footer.css" />
+    <link rel="stylesheet" href="styles/css/category.css" />
+    <link rel="stylesheet" href="styles/css/category-book-list.css" />
+  </head>
+
+  <body>
+    <main>
+      <header class="container">                                                    <!-- global.css -->       
+        <section class="bookstore-logo">                                            <!--TODO: Where is this?-->
+          <a href="index.html">
+            <img
+              src="styles/images/site/bookstore-logo.png"
+              alt="Another Bookstore Logo"
+              width="150px"
+              height="auto"
+            />
+          </a>
+        </section>
+        <section class="title-and-search-bar">                                      <!-- TODO: Where is this? -->
+          <h1 class="text-logo">Another Bookstore</h1>                              <!-- app-header.css -->
+          <form action="category.html">
+            <input type="text" class="search-bar" /><br />                          <!-- app-header.css -->
+            <input type="submit" class="button search-button" value="Search" />     <!-- TODO: Where is class search-button? -->
+          </form>
+        </section>
+        <section class="header-dropdown-and-cart">                                  <!-- TODO: Where is this? -->
+          <button class="button">cart (0)</button>
+          <button class="button">login</button>
+          <div class="header-dropdown">                                             <!-- header-dropdown.css -->
+            <button class="button categories-button">Categories</button>            <!-- TODO: Where is categories-button -->
+            <ul>
+              <li><a href="category.html?category=Classics">Classics</a></li>
+              <li><a href="category.html?category=Fantasy">Fantasy</a></li>
+              <li><a href="category.html?category=Mystery">Mystery</a></li>
+              <li><a href="category.html?category=Romance">Romance</a></li>
+            </ul>
+          </div>
+        </section>
+      </header>
+      <div class="category-page">                                                   <!-- TODO: Where is this? -->
+        <nav class="category-nav">                                                  <!-- TODO: Where is this? -->
+          <ul class="category-buttons">                                             <!-- category.css -->
+            <li class="button selected-category-button">Classics</li>               <!-- category.css -->
+            <li>
+              <a class="button unselected-category-button" href="category.html">Fantasy</a>       <!-- category.css -->                                                             
+            </li>
+            <li>
+              <a class="button unselected-category-button" href="category.html"
+                >Mystery</a
+              >                                                                     <!-- category.css --> 
+            </li>
+            <li>
+              <a class="button unselected-category-button" href="category.html"
+                >Romance</a
+              >                                                                     <!-- category.css --> 
+            </li>
+          </ul>
+        </nav>
+        <section class="category-book-list">                                        <!-- TODO: Where is this? -->                   
+          <ul id="book-boxes">                                                      <!-- category-book-list -->
+            <li class="book-box">
+              <div class="book-image">                                              <!-- TODO: Where is this? --> 
+                <a href="#">
+                  <img src="styles/images/books/the-iliad.gif" alt="The Iliad" />
+                </a>
+              </div>
+              <div class="book-title">The Iliad</div>                               <!-- category-book-list.css -->
+              <div class="book-author">Homer</div>                                  <!-- category-book-list.css -->
+              <div class="book-price">$6.99</div>                                   <!-- TODO: Where is this? --> 
+              <button class="button">Add to Cart</button>                           <!-- global.css -->
+              <button class="button">Read Now</button>                              <!-- global.css -->
+            </li>
+            <li class="book-box">                                                   <!-- category-book-list.css -->
+              <div class="book-image">                                              <!-- TODO: Where is this? --> 
+                <a href="#">
+                  <img
+                    src="styles/images/books/the-brothers-karamazov.gif"
+                    alt="The Brothers Karamazov"
+                  />
+                </a>
+              </div>
+              <div class="book-title">The Brothers Karamazov</div>
+              <div class="book-author">Fyodor Dostoyevski</div>
+              <div class="book-price">$13.99</div>
+              <button class="button">Add to Cart</button>
+              <button class="button">Read Now</button>
+            </li>
+            <li class="book-box">
+              <div class="book-image">
+                <a href="#">
+                  <img
+                    src="styles/images/books/little-dorrit.gif"
+                    alt="Little Dorrit"
+                  />
+                </a>
+              </div>
+              <div class="book-title">Little Dorrit</div>
+              <div class="book-author">Charles Dickens</div>
+              <div class="book-price">$5.99</div>
+              <button class="button">Add to Cart</button>
+              <button class="button">Read Now</button>
+            </li>
+            <li class="book-box">
+              <div class="book-image">
+                <a href="#">
+                  <img src="styles/images/books/moby-dick.gif" alt="Moby Dick" />
+                </a>
+              </div>
+              <div class="book-title">Moby Dick</div>
+              <div class="book-author">Herman Melville</div>
+              <div class="book-price">$6.99</div>
+              <button class="button">Add to Cart</button>
+              <button class="button">Read Now</button>
+            </li>
+          </ul>
+        </section>
+      </div>
+      <footer class="container">                                <!-- home.css -->
+        <section class="links">                                 <!-- app-footer.css -->
+          <a href="index.html">about</a>
+          <a href="index.html">contact</a>
+          <a href="index.html">directions</a>
+        </section>
+        <section class="social-media-icons">                    <!-- app-footer.css -->
+          <a class="button" href="index.html">Facebook</a>      <!-- global.css -->
+          <a class="button" href="index.html">Twitter</a>
+        </section>
+      </footer>
+    </main>
+  </body>
+</html>
