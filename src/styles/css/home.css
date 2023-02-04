@@ -12,15 +12,15 @@
     flex-wrap: wrap;
     gap: 1em;
 }
-
+  
 .category-image-items a {
     text-align: center;
     cursor: pointer;
 }
-
-.category-image-items div{
+  
+.category-image-items div {
     padding: 0.5em 0;
-    background: rgba(0,0,0,0.5); /* last # is the percentage opacity */
+    background: rgba(0, 0, 0, 0.5); /* last # is percent opacity */
     color: white;
     transform: translateY(-2.25em);
     margin-bottom: -2em;

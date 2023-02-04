@@ -3,18 +3,19 @@
     flex-direction: row;
     text-align: center;
     background-color: var(--neutral-color);
-}
-
-.button.selected-category-button {
+  }
+  
+  .button.selected-category-button {
     background-color: var(--primary-color);
-}
-
-.button.unselected-category-button,
-.button.unselected-category-button:visited {
+  }
+  
+  .button.unselected-category-button,
+  .button.unselected-category-button:visited {
     background-color: var(--neutral-color);
-}
-
-.button.unselected-category-button:hover,
-.button.unselected-category-button:active {
+  }
+  
+  .button.unselected-category-button:hover,
+  .button.unselected-category-button:active {
     background-color: var(--primary-color);
-}
+  }
+  
