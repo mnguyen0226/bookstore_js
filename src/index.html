@@ -76,27 +76,34 @@
             </header>
 
             <div class="home-page">                                                         <!-- home.css -->
-                <section class="welcome-text flow-content container dark-background">       <!-- home.css, global.css (x3) -->
-                  <h2>Welcome to Another Bookstore</h2>
-                  <p>
-                    Another Bookstore is a client-side application written in HTML and
-                    CSS.
-                  </p>
-                  <p>
-                    It includes a home page and a category page. Both pages have the
-                    same header and footer.
-                  </p>
-                  <p>
-                    You can navigate to the category page by choosing any category from
-                    the dropdown menu in the header. You can navigate to the home page
-                    by clicking on the logo in the header.
-                  </p>
-                  <p>Take some time and explore the code.</p>
+                
+                <!-- home.css, global.css (x3) -->
+                <section class="welcome-text flow-content container dark-background align-welcome-text">       
+                    <div>
+                        <p class="quote-text">
+                            “So, listen, to yourself and to those with whom you are speaking. Your wisdom then consists not of the knowledge you already have, but the continual search for knowledge, which is the highest form of wisdom.”
+                        </p>
+                        <div class="reference-text">
+                            <p>― Jordan B. Peterson</p>
+                            <p>12 Rules for Life: An Antidote to Chaos</p>
+                        </div>      
+                    </div>
+                    
+                    <div class="shopping-button">
+                        Shop Now
+                    </div>
+                </section>
+
+                <section class="welcome-text flow-content container dark-background align-welcome-text background-pic">       
+                    Add books here
                 </section>
                 
-                <section class="category-images container">                                 <!-- TODO: where is category-images; global.css -->
-                  <div class="category-image-items">                                        <!-- home.css -->
-                    <a>
+                <!-- TODO: where is category-images; global.css -->
+                <!-- <section class="category-images container">                                  -->
+                   <!-- home.css -->
+                  <!-- <div class="category-image-items righthalf">     -->
+
+                    <!-- <a>
                       <img
                         src="styles/images/categories/classics.jpg"
                         alt="Classics category"
@@ -104,8 +111,8 @@
                         height="180px"
                       />
                       <div>Classics</div>
-                    </a>
-                    <a>
+                    </a> -->
+                    <!-- <a>
                       <img
                         src="styles/images/categories/fantasy.jpg"
                         alt="Fantasy category"
@@ -131,22 +138,23 @@
                         height="180px"
                       />
                       <div>Romance</div>
-                    </a>
-                  </div>
-                </section>
-              </div>
+                    </a> -->
+                  <!-- </div> -->
+                <!-- </section> -->
+            </div>
 
-              <footer class="container">                    <!-- home.css -->
-                <section class="links">                     <!-- app-footer.css -->
-                  <a href="index.html">about</a>
-                  <a href="index.html">contact</a>
-                  <a href="index.html">directions</a>
-                </section>
-                <section class="social-media-icons">        <!-- app-footer.css -->
-                  <a class="button">Facebook</a>            <!-- global.css -->
-                  <a class="button">Twitter</a>
-                </section>
-              </footer>
+            <footer class="container">                    <!-- home.css -->
+              <section class="links">                     <!-- app-footer.css -->
+                <a href="index.html">about</a>
+                <a href="index.html">contact</a>
+                <a href="index.html">directions</a>
+              </section>
+              <section class="social-media-icons">        <!-- app-footer.css -->
+                <a class="button">Facebook</a>            <!-- global.css -->
+                <a class="button">Twitter</a>
+              </section>
+            </footer>
+
         </main>
     </body>
 </html>

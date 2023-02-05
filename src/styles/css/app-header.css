@@ -16,6 +16,7 @@ header {
   text-indent: 1em;
 }
 
+/* self-implemented */
 .search-button {
   padding-top: 0.5em;
   padding-bottom: 0.5em;
@@ -25,6 +26,7 @@ header {
   border-bottom-right-radius: 20px;
 }
 
+/* self-implemented */
 .pill-button {
   padding-top: 0.5em;
   padding-bottom: 0.5em;
@@ -33,6 +35,7 @@ header {
   border-radius: 200px;
 }
 
+/* self-implemented */
 .pill-button-cart {
   padding-top: 0.5em;
   padding-bottom: 0.5em;
@@ -42,6 +45,7 @@ header {
   margin-right: 10px
 }
 
+/* self-implemented */
 .pill-button-count {
   padding-top: 0.05em;
   padding-bottom: 0.05em;
@@ -50,6 +54,7 @@ header {
   border-radius: 20px;
 }
 
+/* self-implemented */
 .categories-button{
   padding-top: 0.5em;
   padding-bottom: 0.5em;
@@ -84,16 +89,19 @@ header {
   justify-content: space-between;
 }
 
+/* self-implemented */
 .header-div {
   display: flex;
   align-items: center;
   gap: 1em;
 }
 
+/* self-implemented */
 .relative {
   position: relative;
 }
 
+/* self-implemented */
 .absolute {
   position: absolute;
   top: -10px;

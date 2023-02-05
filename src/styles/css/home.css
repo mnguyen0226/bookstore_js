@@ -25,3 +25,29 @@
     transform: translateY(-2.25em);
     margin-bottom: -2em;
 }
+
+/* self-implemented */
+.quote-text {
+    text-align: center;
+    font-style: italic;
+    font-size: 120%;
+}
+
+/* self-implemented */
+.reference-text {
+    text-align: center;
+    font-weight: bold
+}
+
+/* self-implemented */
+.shopping-button {
+    text-align: center;
+}
+
+.background-pic {
+    background-image: url("../images/background/library.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
