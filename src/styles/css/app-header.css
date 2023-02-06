@@ -55,7 +55,7 @@ header {
 }
 
 /* self-implemented */
-.categories-button{
+.categories-button-style{
   padding-top: 0.5em;
   padding-bottom: 0.5em;
   padding-right: 1em;
@@ -107,3 +107,4 @@ header {
   top: -10px;
   right: -2px;
 }
+

@@ -62,6 +62,12 @@
     margin-bottom: 3em;
 }
 
+.blue-upper-border {
+    border-top-style: solid;
+    border-color: #00239E;
+    border-width: thin
+}
+
 .position-12-rules {
     position: absolute;
     top: 50%;
@@ -87,7 +93,7 @@
 }
 
 .round-book {
-    border-radius: 20px;
+    border-radius: 10px;
 }
 
 .resize-12-rules {
@@ -112,4 +118,33 @@
     margin-top: 6em;
     margin-bottom: 3em;
     position: relative
+}
+
+.yellow-border-yellow-bg {
+    border-style: solid;
+    border-width: thin;
+
+    border-color: #E1CB00;
+    background: #E1CB00;
+    color: white;
+}
+
+.yellow-border-yellow-bg:hover,
+.yellow-border-yellow-bg:active {
+    border-style: solid;
+    border-width: thin;
+    border-color: #9d8d00;
+    background: #9d8d00;
+    color: white;
+}
+
+.categories-element{
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    border-style: solid;
+    border-width: thin;
+
+    border-color: #00239E;
+    background: white;
+    color: #00239E;
 }

@@ -181,6 +181,24 @@ body {
   color: white;
 }
 
+.blue-border-white-bg {
+  border-style: solid;
+  border-width: thin;
+  
+  border-color: #00239E;
+  background: white;
+  color: #00239E;
+}
+
+.white-border-blue-bg {
+  border-style: solid;
+  border-width: thin;
+
+  border-color: #00239E;
+  background: #00239E;
+  color: white;
+}
+
 /* LINKS */
 
 /*
