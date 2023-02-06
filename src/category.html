@@ -10,8 +10,7 @@
       href="//netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css"
       rel="stylesheet"
     /> -->
-    <link rel="stylesheet" href="https://kit.fontawesome.com/3ed24d4b6c.css" crossorigin="anonymous">
-
+    <link href="http://maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
 
     <!-- order of CSS files is important (this is the "Cascade" part of CSS) -->
 
@@ -25,42 +24,72 @@
     <link rel="stylesheet" href="styles/css/app-footer.css" />
     <link rel="stylesheet" href="styles/css/category.css" />
     <link rel="stylesheet" href="styles/css/category-book-list.css" />
+
+    <!-- Extra add -->
+    <link rel="stylesheet" href="styles/css/home.css" />
   </head>
 
   <body>
     <main>
-      <header class="container">                                                    <!-- global.css -->       
-        <section class="bookstore-logo">                                            <!--TODO: Where is this?-->
-          <a href="index.html">
-            <img
-              src="styles/images/site/bookstore-logo.png"
-              alt="Another Bookstore Logo"
-              width="150px"
-              height="auto"
-            />
-          </a>
-        </section>
-        <section class="title-and-search-bar">                                      <!-- TODO: Where is this? -->
-          <h1 class="text-logo">Books.JBP</h1>                              <!-- app-header.css -->
-          <form action="category.html">
-            <input type="text" class="search-bar" /><br />                          <!-- app-header.css -->
-            <input type="submit" class="button search-button" value="Search" />     <!-- TODO: Where is class search-button? -->
-          </form>
-        </section>
-        <section class="header-dropdown-and-cart">                                  <!-- TODO: Where is this? -->
-          <button class="button">cart (0)</button>
-          <button class="button">login</button>
-          <div class="header-dropdown">                                             <!-- header-dropdown.css -->
-            <button class="button categories-button">Categories</button>            <!-- TODO: Where is categories-button -->
-            <ul>
-              <li><a href="category.html?category=Classics">Classics</a></li>
-              <li><a href="category.html?category=Fantasy">Fantasy</a></li>
-              <li><a href="category.html?category=Mystery">Mystery</a></li>
-              <li><a href="category.html?category=Romance">Romance</a></li>
-            </ul>
-          </div>
+
+      <header class="container header-space">                                                      <!-- global.css -->
+        <div class="header-div">
+            <section class="bookstore-logo">                                            <!--TODO: Where is this?-->
+                <a href="index.html">                           
+                    <img
+                        src="styles/images/site/bookstore-logo.png"
+                        alt="Another Bookstore Logo"
+                        width="50px"
+                        height="auto"
+                    />
+                </a>
+            </section>
+
+            <section class="title-and-search-bar">                                          <!-- TODO: Where is this? app-header.css -->
+                <h1 class="text-logo">Books.JBP</h1>                                        <!-- app-header.css -->
+            </section>
+
+
+            <section class="title-and-search-bar">                                          <!-- TODO: Where is this? app-header.css -->
+                <form action="category.html" class="search-bar-and-button">
+                    <input type="text" class="search-bar blue-border-white-bg" placeholder="Search"/>                                <!-- app-header.css -->
+                    
+                    <button type="submit" class="button search-button white-border-blue-bg">
+                        <i class="fa fa-search"></i>                                         <!-- TODO: Where is class search-button? app-header.css-->
+                    </button>
+                
+                </form>
+            </section>
+
+        </div>
+
+        <section class="header-dropdown-and-cart header-div">                               <!-- TODO: Where is this? app-header.css -->
+            <div class="header-dropdown">                                                   <!-- header-dropdown.css -->
+                <button class="button categories-button-style blue-border-white-bg">
+                    Categories&nbsp
+                    <i class="fa fa-caret-down"></i>
+                </button>                <!-- TODO: Where is categories-button? app-header.css -->
+                <ul class="categories-element">
+                    <li><a href="category.html?category=Classics">Jordan Peterson's Book</a></li>
+                    <li><a href="category.html?category=Fantasy">Philosophy</a></li>
+                    <li><a href="category.html?category=Mystery">Psychology</a></li>
+                    <li><a href="category.html?category=Romance">Neuroscience</a></li>
+                    <li><a href="category.html?category=Romance">Religion</a></li>
+                    <li><a href="category.html?category=Romance">History</a></li>
+                    <li><a href="category.html?category=Romance">21st Century</a></li>
+                </ul>
+            </div>
+            <button class="button pill-button white-border-blue-bg">Login</button>
+
+            <div class="relative">
+                <button class="button pill-button-cart white-border-blue-bg"><i class="fa fa-shopping-cart"></i></button>
+                <button class="button pill-button-count absolute yellow-border-yellow-bg">0</button>
+            </div>
+
         </section>
       </header>
+
+
       <div class="category-page">                                                   <!-- TODO: Where is this? -->
         <nav class="category-nav">                                                  <!-- TODO: Where is this? -->
           <ul class="category-buttons">                                             <!-- category.css -->
@@ -139,16 +168,37 @@
           </ul>
         </section>
       </div>
-      <footer class="container">                                <!-- home.css -->
-        <section class="links">                                 <!-- app-footer.css -->
-          <a href="index.html">about</a>
-          <a href="index.html">contact</a>
-          <a href="index.html">directions</a>
-        </section>
-        <section class="social-media-icons">                    <!-- app-footer.css -->
-          <a class="button" href="index.html">Facebook</a>      <!-- global.css -->
-          <a class="button" href="index.html">Twitter</a>
-        </section>
+
+
+      <footer class="container centered-footer">                    <!-- home.css -->
+        <div class="center-text">
+          <section class="bold-url">
+            Books.JBP
+          </section>
+          
+          <section class="social-media-icons inline-display margin-footer">        <!-- app-footer.css -->
+            <a class="button"><i class="fa fa-youtube"></i></a>            <!-- global.css -->
+            <a class="button"><i class="fa fa-twitter"></i></a>
+            <a class="button"><i class="fa fa-facebook"></i></a>
+            <a class="button"><i class="fa fa-instagram"></i></a>
+            <a class="button"><i class="fa fa-pinterest"></i></a>
+          </section>
+
+          </br>
+
+          <section class="links inline-display margin-links">                     <!-- app-footer.css -->
+            <a href="index.html">About</a>
+            &nbsp|&nbsp
+            <a href="index.html">Contact</a>
+            &nbsp|&nbsp
+            <a href="index.html">Directions</a>
+          </section>
+
+          <section>
+            Copyright &copy 2023. All Right Reserved.
+          </section>
+
+        </div>
       </footer>
     </main>
   </body>
