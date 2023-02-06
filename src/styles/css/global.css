@@ -21,13 +21,14 @@
     For example, if you want 20px, then set the size to 20/16 = 1.25rem.
   */
   --defatul-font-size: 1.25rem;
-  --default-text-color: #111;
+  --default-text-color: #00239E;
+  --secondary-text-color: white;
   --neutral-color: #4e4e4e;
 
-  --primary-color: dodgerblue;
+  --primary-color: #00239E;
   --primary-color-dark: darkblue;
-  --primary-background-color: whitesmoke;
-  --secondary-background-color: burlywood;
+  --primary-background-color: white;
+  --secondary-background-color: #00239E;
   --card-background-color: navajowhite;
 }
 
@@ -139,8 +140,8 @@ textarea {
   This utility class does that.
 */
 .dark-background {
-  background-color: var(--neutral-color);
-  color: whitesmoke;
+  background-color: var(--primary-background-color);
+  color: var( --default-text-color);
 }
 
 /* LAYOUT */
@@ -191,7 +192,7 @@ body {
 
 a,
 a:visited {
-  color: var(--primary-color);
+  color: var(--secondary-text-color);
 }
 
 a:hover,

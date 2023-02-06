@@ -1,5 +1,5 @@
 header {
-  background: var(--secondary-background-color);
+  background: var(--primary-background-color);
   display: flex;
   padding: 1em;
   gap: 1em;
