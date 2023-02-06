@@ -124,8 +124,8 @@
     border-style: solid;
     border-width: thin;
 
-    border-color: #E1CB00;
-    background: #E1CB00;
+    border-color: #c6b200;
+    background: #c6b200;
     color: white;
 }
 
@@ -133,8 +133,8 @@
 .yellow-border-yellow-bg:active {
     border-style: solid;
     border-width: thin;
-    border-color: #9d8d00;
-    background: #9d8d00;
+    border-color: #ffe600;
+    background: #ffe600;
     color: white;
 }
 

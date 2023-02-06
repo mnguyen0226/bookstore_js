@@ -26,7 +26,7 @@
   --neutral-color: #4e4e4e;
 
   --primary-color: #00239E;
-  --primary-color-dark: darkblue;
+  --primary-color-dark: rgb(0, 0, 255);
   --primary-background-color: white;
   --secondary-background-color: #00239E;
   --card-background-color: navajowhite;
