@@ -44,8 +44,8 @@
 /* self-implemented */
 .shopping-button {
     text-align: center;
-    margin-top: 3em;
-    margin-bottom: 3em
+    margin-top: 1em;
+    margin-bottom: 3em;
 }
 
 .background-pic {
@@ -53,7 +53,6 @@
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    position: relative
 }
 
 .left-page-margin {
@@ -63,11 +62,54 @@
     margin-bottom: 3em;
 }
 
-.centered-image {
+.position-12-rules {
     position: absolute;
     top: 50%;
     left: 50%;
-    transform: translate(-50%, -50%);
-    text-align: center;
-  }
+    /* transform: translate(-5%, -50%); */
+    transform: translate(-5%, 0%);
+}
 
+.position-beyond-order {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    /* transform: translate(-45%, -123%); */
+    transform: translate(-45%, -28%);
+}
+
+.position-map-of-meaning {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    /* transform: translate(-55%, -20%); */
+    transform: translate(-55%, 70%);
+}
+
+.round-book {
+    border-radius: 20px;
+}
+
+.resize-12-rules {
+    max-width: 70%;
+    height: 70%;
+}
+
+.resize-beyond-order {
+    max-width: 40%;
+    height: 40;
+}
+
+.resize-map-of-meaning {
+    max-width: 50%;
+    height: 50%;
+}
+
+.right-page-margin {
+    justify-content: center;
+    margin-left: 3em;
+    margin-right: 3em;
+    margin-top: 6em;
+    margin-bottom: 3em;
+    position: relative
+}
