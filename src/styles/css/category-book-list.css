@@ -53,7 +53,7 @@
 .read-now-pos {
   position: absolute;
   top: 72.5%;
-  left: 50%;
+  left: 49%;
   /* transform: translate(-45%, -123%); */
   transform: translate(-117%, 0%);
 }
@@ -69,7 +69,7 @@
 .price-pos {
   position: absolute;
   top: 58%;
-  left: 50%;
+  left: 53%;
   /* transform: translate(-45%, -123%); */
   transform: translate(82%, 0%);
 }
