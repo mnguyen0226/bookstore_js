@@ -77,3 +77,7 @@
 .round-button {
   border-radius: 20px;
 }
+
+.price-font {
+  font-family: var(--price-font-family);
+}

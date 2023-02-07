@@ -39,3 +39,7 @@ footer {
 .margin-links {
     margin-bottom: 1em;
 }
+
+.round-icon {
+    border-radius: 50px;
+}

@@ -112,7 +112,10 @@
 }
 
 .right-page-margin {
-    justify-content: center;
+    display:flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+
     margin-left: 3em;
     margin-right: 3em;
     margin-top: 6em;

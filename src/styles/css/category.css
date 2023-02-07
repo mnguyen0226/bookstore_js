@@ -1,6 +1,8 @@
 .category-buttons {
   display: flex;
   flex-direction: row;
+  flex-wrap: wrap;
+  
   text-align: center;
   justify-content: space-between;
   background-color: var(--primary-background-color);
