@@ -11,7 +11,8 @@
 
 /*category color selected*/
 .button.selected-category-button {
-  background-color: var(--primary-color);
+  /* background-color: var(--primary-color); */
+  background-color: black;
   color: var(--secondary-text-color); 
 }
 
@@ -24,7 +25,8 @@
 
 .button.unselected-category-button:hover,
 .button.unselected-category-button:active {
-  background-color: var(--primary-color);
+  /* background-color: var(--primary-color); */
+  background-color: black;
   color: var(--secondary-text-color); 
 }
 

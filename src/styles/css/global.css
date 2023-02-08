@@ -29,7 +29,7 @@
   --defatul-font-size: 1.25rem;
   --default-text-color: #00239E;
   --secondary-text-color: white;
-  --neutral-color: #4e4e4e;
+  --neutral-color:#4e4e4e;
 
   --primary-color: #00239E;
   --primary-color-dark: rgb(0, 0, 255);
@@ -223,3 +223,15 @@ a:hover,
 a:active {
   color: var(--primary-color-dark);
 }
+
+
+
+/* li:hover {
+  border-radius: 20px;
+  border-style: solid;
+  border-width: thin;
+
+  border-color: #00239E;
+  background-color: red;
+  color: #00239E;
+} */

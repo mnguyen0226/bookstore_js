@@ -18,13 +18,26 @@
 }
 
 .header-dropdown a {
-  color: black;
+  color: #00239E;
+  background: white;
   text-decoration: none;
 }
 
-.header-dropdown li:hover {
-  background: lightgray;
+.header-dropdown a:hover{
+  background: var(--primary-color-dark);
+  color: white;
 }
+
+/* self-implemented*/
+.header-dropdown li:hover{
+  background: var(--primary-color-dark);
+  color: white;
+  border-radius: 20px;
+  border-style: solid;
+  border-width: thin;
+  border-color: #00239E;
+}
+
 
 .header-dropdown:hover ul {
   display: block;
