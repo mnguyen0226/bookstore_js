@@ -36,43 +36,51 @@
   "books": [
     {
       "bookId": 1001,
-      "title": "The Iliad",
-      "author": "Homer",
-      "price": 699,
+      "title": "Mephistopheles: The Devil in the Modern World",
+      "author": "Jeffrey Burton Russell",
+      "price": 2695,
       "isPublic": true,
-      "categoryId": 1001
+      "categoryId": 1005
     },
     {
       "bookId": 1002,
-      "title": "The Brothers Karamazov",
-      "author": "Fyodor Dostoyevski",
-      "price": 799,
-      "isPublic": true,
-      "categoryId": 1001
+      "title": "Words with Power",
+      "author": "Northrop Frye",
+      "price": 1289,
+      "isPublic": false,
+      "categoryId": 1005
     },
     {
       "bookId": 1003,
-      "title": "Little Dorrit",
-      "author": "Charles Dickens",
-      "price": 599,
-      "isPublic": true,
-      "categoryId": 1001
+      "title": "A History of Religious Ideas Volume 1",
+      "author": "Mircea Eliade",
+      "price": 2750,
+      "isPublic": false,
+      "categoryId": 1005
     },
     {
       "bookId": 1004,
-      "title": "Moby Dick",
-      "author": "Herman Melville",
-      "price": 699,
-      "isPublic": true,
-      "categoryId": 1001
+      "title": "A History of Religious Ideas Volume 2",
+      "author": "Mircea Eliade",
+      "price": 4400,
+      "isPublic": false,
+      "categoryId": 1005
     },
     {
       "bookId": 1005,
-      "title": "Hamlet",
-      "author": "William Shakespeare",
-      "price": 899,
+      "title": "A History of Religious Ideas Volume 3",
+      "author": "Mircea Eliade",
+      "price": 2950,
+      "isPublic": false,
+      "categoryId": 1005
+    },
+    {
+      "bookId": 1006,
+      "title": "Shamanism: Archaic Techniques of Estasy",
+      "author": "Mircea Eliade",
+      "price": 1999,
       "isPublic": true,
-      "categoryId": 1001
+      "categoryId": 1005
     }
   ]
 }

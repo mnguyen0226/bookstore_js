@@ -36,4 +36,9 @@ Question 4:  activate a and li at the same time flipping color
     - Build App.vue
     - Import Global CSS
 - App.vue:
-- db.json: store all the local data. Have 4 categories and 4 books at least
+- db.json: store all the local data. Have 4 categories and 4 books at least.
+
+TODO:
+- Check the rubric, make sure the links is correct
+- Make sure the style of the footer make sense like underline when choose
+- Change category CSS (Piazza)
