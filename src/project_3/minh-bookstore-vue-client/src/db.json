@@ -2,22 +2,34 @@
   "categories": [
     {
       "categoryId": 1001,
-      "name": "Classics"
+      "name": "Jordan Peterson's Book"
     },
     {
       "categoryId": 1002,
-      "name": "Fantasy"
+      "name": "Philosophy"
     },
     {
       "categoryId": 1003,
-      "name": "Mystery"
+      "name": "Psychology"
     },
     {
       "categoryId": 1004,
-      "name": "Romance"
+      "name": "Neuroscience"
     },
     {
       "categoryId": 1005,
+      "name": "Religion"
+    },
+    {
+      "categoryId": 1006,
+      "name": "History"
+    },
+    {
+      "categoryId": 1007,
+      "name": "21st Century"
+    },
+    {
+      "categoryId": 1008,
       "name": "Science Fiction"
     }
   ],

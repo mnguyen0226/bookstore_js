@@ -2,6 +2,9 @@
 
 @import url("https://fonts.googleapis.com/css?family=Proza+Libre");
 @import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,700;1,400;1,700&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Itim&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap');
 
 /* CUSTOM PROPERTIES */
 
@@ -11,24 +14,28 @@
   custom properties are always defined in :root (not in html).
 */
 :root {
-    --title-font-family: "Proza Libre", serif;
-    --default-font-family: "Roboto", sans-serif;
-    /*
-      16px is the default font size set by browsers in the html tag.
-      This should never be changed so that vision-impared users can override it.
-      Therefore, 1rem (root em) is the width of an em-dash at 16px.
-      If you want a differnt default size for your site, change it in the body tag.
-      For example, if you want 20px, then set the size to 20/16 = 1.25rem.
-    */
-    --default-font-size: 1.25rem;
-    --default-text-color: #111;
-    --neutral-color: #4e4e4e;
+  /* --title-font-family: "Proza Libre", serif; */
+  --title-font-family: "Lobster", cursive;
+  /* --default-font-family: "Roboto", sans-serif; */
+  --default-font-family: "Itim", cursive;
+  --price-font-family: "Dancing Script", cursive;
+  /* 
+    16px is the default font size set by browswers in the html tag.
+    This should never be changed so that vision-impared users can override it.
+    Therefore, 1rem (root em) is the width of an em-dash at 16px.
+    If you want a differnt default size for your site, change it in the body tag.
+    For example, if you want 20px, then set the size to 20/16 = 1.25rem.
+  */
+  --defatul-font-size: 1.25rem;
+  --default-text-color: #00239E;
+  --secondary-text-color: white;
+  --neutral-color:#4e4e4e;
 
-    --primary-color: dodgerblue;
-    --primary-color-dark: darkblue;
-    --primary-background-color: whitesmoke;
-    --secondary-background-color: burlywood;
-    --card-background-color: navajowhite;
+  --primary-color: #00239E;
+  --primary-color-dark: rgb(0, 0, 255);
+  --primary-background-color: white;
+  --secondary-background-color: #00239E;
+  --card-background-color: navajowhite;
 }
 
 /* RESET */
@@ -40,34 +47,33 @@
   and bottom margins of 1em, the space between them will be... 1em.
   It will not be 2em as you might think. To get around this odd behavior,
   many developers choose to set all margins on paragrph elements to 0
-  and fix problems as they arise.
+  and fix problems as they arise.  
 */
 h1,
 h2,
 h3,
 p {
-    margin: 0;
+  margin: 0;
 }
 
 /* For large text sizes, you typically want to decrease your line height. */
 h1,
 h2,
 h3 {
-    font-family: var(--title-font-family);
-    line-height: 1;
+  line-height: 1;
 }
 
 /* For small text sizes, you typically want to increase your line height. */
 p {
-    line-height: 1.5;
+  line-height: 1.5;
 }
 
 /* Get rid of styling (numbers, bullets, and spacing) for lists. */
 ol,
 ul {
-    list-style: none;
-    padding: 0;
-    margin: 0;
+  list-style: none;
+  padding: 0;
+  margin: 0;
 }
 
 /*
@@ -77,7 +83,7 @@ ul {
   See the box model (content/padding/border/margin) for details.
 */
 * {
-    box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 /*
@@ -86,9 +92,9 @@ ul {
   A height of auto will ensure the aspect ratio is preserved.
 */
 img {
-    max-width: 100%;
-    height: auto;
-    display: block;
+  max-width: 100%;
+  height: auto;
+  display: block;
 }
 
 /*
@@ -106,9 +112,9 @@ input,
 optgroup,
 select,
 textarea {
-    color: inherit;
-    font: inherit;
-    margin: 0;
+  color: inherit;
+  font: inherit;
+  margin: 0;
 }
 
 /* UTILITY CLASSES */
@@ -123,7 +129,7 @@ textarea {
   to the first elem only when it is followed by another elem.
 */
 .flow-content > * + * {
-    margin-top: 1rem;
+  margin-top: 1rem;
 }
 
 /*
@@ -131,7 +137,7 @@ textarea {
   will ensure a nice padding around the contents.
 */
 .container {
-    padding: 1rem;
+  padding: 1rem;
 }
 
 /*
@@ -140,23 +146,20 @@ textarea {
   This utility class does that.
 */
 .dark-background {
-    background-color: var(--neutral-color);
-    color: whitesmoke;
+  background-color: var(--primary-background-color);
+  color: var( --default-text-color);
 }
 
-/* BODY */
+/* LAYOUT */
 
 /* These global font properties with be inherited by child elements. */
 body {
-    /* font properties (inherited) */
-    background: var(--primary-background-color);
-    color: var(--default-text-color);
-    font-family: var(--default-font-family);
-    font-size: var(--default-font-size);
-
-    /* layout properties (not inherited) */
-    margin: 0 auto;
-    max-width: 70rem;
+  background: var(--primary-background-color);
+  color: var(--default-text-color);
+  font-family: var(--default-font-family);
+  font-size: var(--default-font-size);
+  margin: 0 auto;
+  max-width: 70rem;
 }
 
 /* BUTTONS */
@@ -170,18 +173,36 @@ body {
 
 .button,
 .button:visited {
-    display: inline-block;
-    background: var(--primary-color);
-    color: white;
-    text-decoration: none;
-    padding: 0.5em 1em;
-    cursor: pointer;
+  display: inline-block;
+  background: var(--primary-color);
+  color: white;
+  text-decoration: none;
+  padding: 0.5em 1em;
+  cursor: pointer;
 }
 
 .button:hover,
 .button:active {
-    background: var(--primary-color-dark);
-    color: white;
+  background: var(--primary-color-dark);
+  color: white;
+}
+
+.blue-border-white-bg {
+  border-style: solid;
+  border-width: thin;
+  
+  border-color: #00239E;
+  background: white;
+  color: #00239E;
+}
+
+.white-border-blue-bg {
+  border-style: solid;
+  border-width: thin;
+
+  border-color: #00239E;
+  background: #00239E;
+  color: white;
 }
 
 /* LINKS */
@@ -193,10 +214,23 @@ body {
   to the shopping cart), but the line has become somewhat blurred.
 */
 
-a, a:visited {
-    /* properties here */
+a,
+a:visited {
+  color: var(--secondary-text-color);
 }
 
-a:hover, a:active {
-/* properties here */
+a:hover,
+a:active {
+  color: var(--primary-color-dark);
 }
+
+
+/* li:hover {
+  border-radius: 20px;
+  border-style: solid;
+  border-width: thin;
+
+  border-color: #00239E;
+  background-color: red;
+  color: #00239E;
+} */

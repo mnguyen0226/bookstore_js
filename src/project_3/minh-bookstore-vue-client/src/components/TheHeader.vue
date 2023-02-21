@@ -4,11 +4,12 @@ import TheHeaderDropdown from "@/components/TheHeaderDropdown.vue";
 
 <style scoped>
 header {
+  background: var(--primary-background-color);
   display: flex;
   flex-direction: row;
-  padding: 1em;
-  background: var(--secondary-background-color);
+  flex-wrap: wrap;
 
+  padding: 1em;
   gap: 1em;
 }
 
@@ -18,6 +19,47 @@ header {
 
 .search-bar {
   padding: 0.5em;
+  border-top-left-radius: 20px;
+  border-bottom-left-radius: 20px;
+  text-indent: 1em;
+}
+
+/* self-implemented */
+.search-button {
+  padding-top: 0.5em;
+  padding-bottom: 0.5em;
+  padding-right: 1em;
+  padding-left: 1em;
+  border-top-right-radius: 20px;
+  border-bottom-right-radius: 20px;
+}
+
+/* self-implemented */
+.pill-button {
+  padding-top: 0.5em;
+  padding-bottom: 0.5em;
+  padding-right: 1em;
+  padding-left: 1em;
+  border-radius: 200px;
+}
+
+/* self-implemented */
+.pill-button-cart {
+  padding-top: 0.5em;
+  padding-bottom: 0.5em;
+  padding-right: 1em;
+  padding-left: 1em;
+  border-radius: 200px;
+  margin-right: 10px
+}
+
+/* self-implemented */
+.pill-button-count {
+  padding-top: 0.05em;
+  padding-bottom: 0.05em;
+  padding-right: 0.6em;
+  padding-left: 0.6em;
+  border-radius: 20px;
 }
 
 @media (max-width: 600px) {
@@ -25,33 +67,117 @@ header {
     flex-direction: column;
   }
 }
+
+/* self-implemented */
+.title-and-search-bar {
+  display: flex;
+}
+
+/* self-implemented */
+.search-bar-and-button {
+  display: flex;
+}
+
+/* self-implemented */
+.header-dropdown-and-cart {
+  display: flex
+}
+
+/* self-implemented */
+.header-space {
+  justify-content: space-between;
+}
+
+/* self-implemented */
+.header-div {
+  display: flex;
+  align-items: center;
+  gap: 1em;
+}
+
+/* self-implemented */
+.relative {
+  position: relative;
+}
+
+/* self-implemented */
+.absolute {
+  position: absolute;
+  top: -10px;
+  right: -2px;
+}
+
+.yellow-border-yellow-bg {
+  border-style: solid;
+  border-width: thin;
+
+  border-color: #c6b200;
+  background: #c6b200;
+  color: white;
+}
+
+.yellow-border-yellow-bg:hover,
+.yellow-border-yellow-bg:active {
+  border-style: solid;
+  border-width: thin;
+  border-color: #ffe600;
+  background: #ffe600;
+  color: white;
+}
 </style>
 
 <template>
-  <header class="container">
-    <section class="bookstore-logo">
-      <router-link to="/">
-        <img
-          src="/site-images/bookstore-logo.png"
-          alt="Another Bookstore Logo"
-          width="150"
-          height="auto"
-        />
-      </router-link>
-    </section>
-    <section class="title-and-search-bar">
-      <h1>
-        <router-link to="/" class="text-logo"> Another Bookstore </router-link>
-      </h1>
-      <form action="category.html">
-        <input type="text" class="search-bar" /><br />
-        <input type="submit" class="button search-button" value="Search" />
-      </form>
-    </section>
-    <section class="header-dropdown-and-cart">
-      <button class="button">cart (0)</button>
-      <button class="button">login</button>
+  <header class="container header-space">
+
+    <div class="header-div">
+      <section class="bookstore-logo">
+        <router-link to="/">
+          <img
+            src="/site-images/bookstore-logo.png"
+            alt="Book JBP Logo"
+            width="50"
+            height="auto"
+          />
+        </router-link>
+      </section>
+
+      <section class="title-and-search-bar">
+        <h1 class="text-logo">Books.JBP</h1>
+      </section>
+
+      <section class="title-and-search-bar">
+        <form action="category.html" class="search-bar-and-button">
+          <input
+            type="text"
+            class="search-bar blue-border-white-bg"
+            placeholder="Search"
+          />
+          <button
+            type="submit"
+            class="button search-button white-border-blue-bg"
+          >
+            <i class="fa fa-search"></i>
+          </button>
+        </form>
+      </section>
+    </div>
+
+    <section class="header-dropdown-and-cart header-div">
+
       <the-header-dropdown></the-header-dropdown>
+
+      <button class="button pill-button white-border-blue-bg">
+        Minh Nguyen
+      </button>
+      <div class="relative">
+        <button class="button pill-button-cart white-border-blue-bg">
+          <i class="fa fa-shopping-cart"></i>
+        </button>
+        <button
+          class="button pill-button-count absolute yellow-border-yellow-bg">
+          0
+        </button>
+      </div>
     </section>
   </header>
 </template>
