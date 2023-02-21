@@ -70,7 +70,11 @@ footer {
 <template>
   <footer class="container centered-footer">
     <div class="center-text">
-      <section class="bold-url">Books.JBP</section>
+      <section class="bold-url">
+        <router-link to="/" style="text-decoration: None; color: white">
+          Books.JBP
+        </router-link>
+      </section>
 
       <section class="social-media-icons inline-display margin-footer">
         <router-link to="/" class="button round-icon">

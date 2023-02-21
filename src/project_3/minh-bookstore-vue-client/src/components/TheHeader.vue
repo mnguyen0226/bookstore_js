@@ -15,6 +15,7 @@ header {
 
 .text-logo {
   font-family: var(--title-font-family);
+  color: #00239E;
 }
 
 .search-bar {
@@ -142,7 +143,9 @@ header {
       </section>
 
       <section class="title-and-search-bar">
-        <h1 class="text-logo">Books.JBP</h1>
+        <router-link to="/" style="text-decoration: None">
+          <h1 class="text-logo">Books.JBP</h1>
+        </router-link>
       </section>
 
       <section class="title-and-search-bar">
