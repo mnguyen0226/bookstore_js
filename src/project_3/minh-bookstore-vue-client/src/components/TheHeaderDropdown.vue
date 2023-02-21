@@ -30,13 +30,18 @@ const categoryList = inject("categoryList") as CategoryItem[];
   text-decoration: none;
 }
 
-.header-dropdown a:hover{
+.header-dropdown a:hover {
   background: var(--primary-color-dark);
   color: white;
 }
 
 /* self-implemented*/
-.header-dropdown li:hover{
+.header-dropdown li:hover a {
+  background: var(--primary-color-dark);
+  color: white;
+}
+
+.header-dropdown li:hover {
   background: var(--primary-color-dark);
   color: white;
   border-radius: 20px;
@@ -63,7 +68,7 @@ const categoryList = inject("categoryList") as CategoryItem[];
 }
 
 /*should be in header*/
-.categories-element{
+.categories-element {
   border-radius: 20px;
   border-style: solid;
   border-width: thin;
