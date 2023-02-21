@@ -11,28 +11,20 @@ const categoryList = inject("categoryList") as CategoryItem[];
   flex-wrap: wrap;
   text-align: center;
   justify-content: space-between;
-  background-color: var(--primary-background-color);
-  color: var(--secondary-text-color); 
 }
 
-/*category color selected*/
-.button.selected-category-button {
+.button.category-button {
+  background-color: white;
+  color: var(--secondary-background-color);
+}
+
+.button.category-button.router-link-active,
+.button.category-button:hover,
+.button.category-button:active {
   background-color: black;
-  color: var(--secondary-text-color); 
+  color: var(--secondary-text-color);
 }
 
-/*category color unselected*/
-.button.unselected-category-button,
-.button.unselected-category-button:visited {
-  background-color: var(--primary-background-color);
-  color: var(--default-text-color);
-}
-
-.button.unselected-category-button:hover,
-.button.unselected-category-button:active {
-  background-color: black;
-  color: var(--secondary-text-color); 
-}
 
 .blue-border-nav-bar {
   border-top-style: solid;
@@ -50,7 +42,7 @@ const categoryList = inject("categoryList") as CategoryItem[];
       <li v-for="category in categoryList" :key="category.categoryId">
         <router-link
           :to="'/category/' + category.name"
-          class="button unselected-category-button"
+          class="button category-button"
         >
           {{ category.name }}
         </router-link>
