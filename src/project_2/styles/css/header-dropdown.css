@@ -46,3 +46,13 @@
   z-index: 1;
   cursor: pointer;
 }
+
+/*self-implemented*/
+.categories-element{
+  border-radius: 20px;
+  border-style: solid;
+  border-width: thin;
+
+  border-color: #00239E;
+  /* color: #00239E; */
+}

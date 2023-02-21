@@ -112,3 +112,20 @@ header {
   right: -2px;
 }
 
+.yellow-border-yellow-bg {
+  border-style: solid;
+  border-width: thin;
+
+  border-color: #c6b200;
+  background: #c6b200;
+  color: white;
+}
+
+.yellow-border-yellow-bg:hover,
+.yellow-border-yellow-bg:active {
+  border-style: solid;
+  border-width: thin;
+  border-color: #ffe600;
+  background: #ffe600;
+  color: white;
+}
