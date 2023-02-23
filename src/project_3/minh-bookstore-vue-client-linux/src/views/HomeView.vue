@@ -1,5 +1,10 @@
 <script setup lang="ts">
 import TheHomeCategoryList from "@/components/TheHomeCategoryList.vue";
+
+function getBookImageUrl(imageFileName: string) {
+  return new URL(`../assets/site-images/${imageFileName}`, import.meta.url).href
+}
+
 </script>
 
 <style scoped>
@@ -54,7 +59,7 @@ import TheHomeCategoryList from "@/components/TheHomeCategoryList.vue";
 }
 
 .background-pic {
-  background-image: url("/site-images/library.png");
+  background-image: url("../assets/site-images/library.png");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -170,22 +175,22 @@ import TheHomeCategoryList from "@/components/TheHomeCategoryList.vue";
       <div class="right-page-margin">
         <div class="position-12-rules">
           <img
+            :src="getBookImageUrl('12_rules.png')"  
             class="round-book resize-12-rules"
-            src="/site-images/12_rules.png"
             alt="12 Rules For Lives"
           />
         </div>
         <div class="position-map-of-meaning">
           <img
             class="round-book resize-map-of-meaning"
-            src="/site-images/map_of_meaning.png"
+            :src="getBookImageUrl('map_of_meaning.png')"  
             alt="12 Rules For Lives"
           />
         </div>
         <div class="position-beyond-order">
           <img
             class="round-book resize-beyond-order"
-            src="/site-images/beyond_order.png" 
+            :src="getBookImageUrl('beyond_order.png')"  
             alt="12 Rules For Lives"
           />
         </div>

@@ -1,5 +1,10 @@
 <script setup lang="ts">
 import TheHeaderDropdown from "@/components/TheHeaderDropdown.vue";
+
+function getBookImageUrl(imageFileName: string) {
+  return new URL(`../assets/site-images/${imageFileName}.png`, import.meta.url).href
+}
+
 </script>
 
 <style scoped>
@@ -134,8 +139,7 @@ header {
       <section class="bookstore-logo">
         <router-link to="/">
           <img
-            src="/site-images/bookstore-logo.png"
-            alt="Book JBP Logo"
+            :src="getBookImageUrl('bookstore-logo')"
             width="50"
             height="auto"
           />

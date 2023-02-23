@@ -11,6 +11,11 @@ const bookImageFileName = function (book: BookItem): string {
   name = name.replace(/:/g, "");
   return `${name}.gif`;
 };
+
+function getBookImageUrl(imageFileName: string) {
+  return new URL(`../assets/book-images/my_books/${imageFileName}`, import.meta.url).href
+}
+
 </script>
 
 <style scoped>
@@ -108,7 +113,7 @@ const bookImageFileName = function (book: BookItem): string {
     <li class="book-box">
       <div class="book-image">
         <img
-          :src="'/book-images/my_books/' + bookImageFileName(props.book)"
+          :src="getBookImageUrl(bookImageFileName(props.book))"
           :alt="book.title"
           class="book-width"
         />
