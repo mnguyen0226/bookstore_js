@@ -1,0 +1,54 @@
+DELETE FROM book;
+ALTER TABLE book AUTO_INCREMENT = 1001;
+
+DELETE FROM category;
+ALTER TABLE category AUTO_INCREMENT = 1001;
+
+INSERT INTO `category` (`name`) VALUES ('Jordan Petersons Book'),('Philosophy'),('Psychology'),('Neuroscience'), ('Religion'), ('History'), ('21st Century');
+
+INSERT INTO `book` (title, author, description, price, rating, is_public, is_featured, category_id) VALUES ('12 Rules for Life: An Antidote to Chaos', 'Jordan B. Peterson', '', 2436, 0, TRUE, FALSE, 1001);
+INSERT INTO `book` (title, author, description, price, rating, is_public, is_featured, category_id) VALUES ('Maps of Meaning', 'Jordan B. Peterson', '', 2200, 0, FALSE, FALSE, 1001);
+INSERT INTO `book` (title, author, description, price, rating, is_public, is_featured, category_id) VALUES ('Beyond Order: 12 More Rules for Life', 'Jordan B. Peterson', '', 1929, 0, TRUE, FALSE, 1001);
+INSERT INTO `book` (title, author, description, price, rating, is_public, is_featured, category_id) VALUES ('Political Correctness Gone Mad', 'Jordan B. Peterson', '', 1167, 0, TRUE, FALSE, 1001);
+
+INSERT INTO `book` (title, author, description, price, rating, is_public, is_featured, category_id) VALUES ('The Charterhouse of Parma', 'Marie-Henri Beyle', '', 1300, 0, TRUE, FALSE, 1002);
+INSERT INTO `book` (title, author, description, price, rating, is_public, is_featured, category_id) VALUES ('Wuthering Heights', 'Emily Bronte', '', 1299, 0, FALSE, FALSE, 1002);
+INSERT INTO `book` (title, author, description, price, rating, is_public, is_featured, category_id) VALUES ('The Master and Margarita', 'Mikhail Bulgakov', '', 1379, 0, FALSE, FALSE, 1002);
+INSERT INTO `book` (title, author, description, price, rating, is_public, is_featured, category_id) VALUES ('The Horse’s Mouth', 'Joyce Cary', '', 2999, 0, TRUE, FALSE, 1002);
+INSERT INTO `book` (title, author, description, price, rating, is_public, is_featured, category_id) VALUES ('The Big Sleep', 'Raymond Chandler', '', 1399, 0, FALSE, FALSE, 1002);
+INSERT INTO `book` (title, author, description, price, rating, is_public, is_featured, category_id) VALUES ('The Long Goodbye', 'Raymond Chandler', '', 1549, 0, TRUE, FALSE, 1002);
+
+INSERT INTO `book` (title, author, description, price, rating, is_public, is_featured, category_id) VALUES ('The Denial of Death', 'Ernest Becker', '', 1489, 0, TRUE, FALSE, 1003);
+INSERT INTO `book` (title, author, description, price, rating, is_public, is_featured, category_id) VALUES ('The Discovery of the Unconscious', 'Henri Ellenberger', '', 6799, 0, TRUE, FALSE, 1003);
+INSERT INTO `book` (title, author, description, price, rating, is_public, is_featured, category_id) VALUES ('Genius', 'Hans Eysenck', '', 6476, 0, TRUE, FALSE, 1003);
+INSERT INTO `book` (title, author, description, price, rating, is_public, is_featured, category_id) VALUES ('Man’s Search for Meaning', 'Viktor Frankl', '', 2099, 0, FALSE, FALSE, 1003);
+INSERT INTO `book` (title, author, description, price, rating, is_public, is_featured, category_id) VALUES ('An Outline of Psychoanalysis', 'Sigmund Freud', '', 1099, 0, TRUE, FALSE, 1003);
+INSERT INTO `book` (title, author, description, price, rating, is_public, is_featured, category_id) VALUES ('The Interpretation of Dreams', 'Sigmund Freud', '', 1329, 0, FALSE, FALSE, 1003);
+
+INSERT INTO `book` (title, author, description, price, rating, is_public, is_featured, category_id) VALUES ('An Ecological Approach to Visual Perception', 'James Gibson', '', 6980, 0, FALSE, FALSE, 1004);
+INSERT INTO `book` (title, author, description, price, rating, is_public, is_featured, category_id) VALUES ('The New Executive Brain', 'Elkhonon Goldberg', '', 2395, 0, TRUE, FALSE, 1004);
+INSERT INTO `book` (title, author, description, price, rating, is_public, is_featured, category_id) VALUES ('The Neuropsychology of Anxiety', 'Jefrey Gray and Neil McNaughton', '', 10398, 0, TRUE, FALSE, 1004);
+INSERT INTO `book` (title, author, description, price, rating, is_public, is_featured, category_id) VALUES ('The Emotional Brain', 'Joseph LeDoux', '', 1359, 0, TRUE, FALSE, 1004);
+INSERT INTO `book` (title, author, description, price, rating, is_public, is_featured, category_id) VALUES ('Affective Neuroscience', 'Jaak Panksepp', '', 5978, 0, FALSE, FALSE, 1004);
+INSERT INTO `book` (title, author, description, price, rating, is_public, is_featured, category_id) VALUES ('The Man who Mistook his Wife for a Hat', 'Oliver Sacks', '', 1306, 0, TRUE, FALSE, 1004);
+
+INSERT INTO `book` (title, author, description, price, rating, is_public, is_featured, category_id) VALUES ('Mephistopheles: The Devil in the Modern World', 'Jeffrey Burton Russell', '', 2695, 0, TRUE, FALSE, 1005);
+INSERT INTO `book` (title, author, description, price, rating, is_public, is_featured, category_id) VALUES ('Words with Power', 'Northrop Frye', '', 1289, 0, FALSE, FALSE, 1005);
+INSERT INTO `book` (title, author, description, price, rating, is_public, is_featured, category_id) VALUES ('A History of Religious Ideas Volume 1', 'Mircea Eliade', '', 2750, 0, TRUE, FALSE, 1005);
+INSERT INTO `book` (title, author, description, price, rating, is_public, is_featured, category_id) VALUES ('A History of Religious Ideas Volume 2', 'Mircea Eliade', '', 4400, 0, TRUE, FALSE, 1005);
+INSERT INTO `book` (title, author, description, price, rating, is_public, is_featured, category_id) VALUES ('A History of Religious Ideas Volume 3', 'Mircea Eliade', '', 2950, 0, FALSE, FALSE, 1005);
+INSERT INTO `book` (title, author, description, price, rating, is_public, is_featured, category_id) VALUES ('Shamanism: Archaic Techniques of Estasy', 'Mircea Eliade', '', 1999, 0, TRUE, FALSE, 1005);
+
+INSERT INTO `book` (title, author, description, price, rating, is_public, is_featured, category_id) VALUES ('Little Science, Big Science', 'Derek de Sola Price', '', 8000, 0, TRUE, FALSE, 1006);
+INSERT INTO `book` (title, author, description, price, rating, is_public, is_featured, category_id) VALUES ('The Mystery of Capital', 'Hernando De Soto', '', 1799, 0, FALSE, FALSE, 1006);
+INSERT INTO `book` (title, author, description, price, rating, is_public, is_featured, category_id) VALUES ('How Systems Work and Especially How They Fail', 'John Gall', '', 9999, 0, TRUE, FALSE, 1006);
+INSERT INTO `book` (title, author, description, price, rating, is_public, is_featured, category_id) VALUES ('The Rise of Statistical Thinking 1820-1900', 'Theodore M Porter', '', 1375, 0, FALSE, FALSE, 1006);
+INSERT INTO `book` (title, author, description, price, rating, is_public, is_featured, category_id) VALUES ('Stalin', 'Edvard Radzinsky', '', 2049, 0, TRUE, FALSE, 1006);
+INSERT INTO `book` (title, author, description, price, rating, is_public, is_featured, category_id) VALUES ('The Rise and Fall of the Third Reich', 'William L Shirer', '', 2999, 0, TRUE, FALSE, 1006);
+
+INSERT INTO `book` (title, author, description, price, rating, is_public, is_featured, category_id) VALUES ('The Great Escape', 'Angus Deaton', '', 1099, 0, FALSE, FALSE, 1007);
+INSERT INTO `book` (title, author, description, price, rating, is_public, is_featured, category_id) VALUES ('How to Spend 75 Billion Dollar to Make the World a Better Place', 'Bjorn Lomborg', '', 6976, 0, TRUE, FALSE, 1007);
+INSERT INTO `book` (title, author, description, price, rating, is_public, is_featured, category_id) VALUES ('Ten Reasons to Look Forward to the Future', 'Johan Norberg', '', 1699, 0, TRUE, FALSE, 1007);
+INSERT INTO `book` (title, author, description, price, rating, is_public, is_featured, category_id) VALUES ('Enlightenment Now', 'Steven Pinker','', 1525, 0, TRUE, FALSE, 1007);
+INSERT INTO `book` (title, author, description, price, rating, is_public, is_featured, category_id) VALUES ('The Rational Optimist: How Prosperity Evolves', 'Matt Ridley', '', 1699, 0, FALSE, FALSE, 1007);
+INSERT INTO `book` (title, author, description, price, rating, is_public, is_featured, category_id) VALUES ('Ten Reasons We’re Wrong About the World', 'David Grinspoon', '', 1539, 0, TRUE, FALSE, 1007);
