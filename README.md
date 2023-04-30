@@ -1,5 +1,5 @@
 # Books.JBP
-Designing an online bookstore using Java, TypeScript, Vue.js, MySQL, HTML5, and CSS
+Designing an online bookstore using Java, TypeScript, Vue.js, MySQL, HTML5, and CSS. The idea comes from the list of books recommended by [Jordan B. Peterson](https://www.jordanbpeterson.com/)
 
 ## Figma Designs
 - Welcome Page
